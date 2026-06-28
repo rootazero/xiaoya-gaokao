@@ -3,8 +3,8 @@
   const schools = data.universities;
   const provinces = data.provinces;
   const number = new Intl.NumberFormat("zh-CN");
-  const basketKey = "muyang-gaokao-basket";
-  const admissionKey = "muyang-admission-history-v1";
+  const basketKey = "xiaoya-gaokao-basket";
+  const admissionKey = "xiaoya-admission-history-v1";
   let admissionRecords = loadAdmissionRecords();
   let admissionIndex = buildAdmissionIndex(admissionRecords);
   const majorScoreBasePath = "data/major-scores/";
