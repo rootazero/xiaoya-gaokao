@@ -1734,7 +1734,7 @@
     const list = selected.length ? selected : fallback;
     const majors = buildMajorRecommendations().slice(0, 6);
     const lines = [
-      "沐阳志愿填报方案",
+      "志愿填报方案",
       `分数：${state.score}；生源：${state.homeProvince}；科目：${state.subject}；地区：${state.activeProvince}`,
       `数据源：${data.meta.sourceName}（截至 ${data.meta.asOf}）`,
       "",
@@ -1754,7 +1754,7 @@
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement("a");
     anchor.href = url;
-    anchor.download = `沐阳志愿方案-${Date.now()}.txt`;
+    anchor.download = `志愿方案-${Date.now()}.txt`;
     anchor.click();
     URL.revokeObjectURL(url);
     showToast("方案已导出");
