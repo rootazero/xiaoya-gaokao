@@ -4,11 +4,32 @@
     {
       "province": "上海",
       "file": "shanghai.csv",
-      "years": [2020, 2021, 2022, 2023, 2024, 2025],
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
       "granularity": "院校专业组投档线",
       "records": 8133,
       "source": "上海市教育考试院",
       "sourceRepo": "666keke/Shanghai-Gaokao"
+    },
+    {
+      "province": "北京",
+      "file": "beijing.csv",
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线",
+      "records": 3915,
+      "source": "北京教育考试院",
+      "sourceRepo": "scottli139/beijing-gaokao-scores",
+      "license": "CC-BY-4.0"
     }
   ]
 }
