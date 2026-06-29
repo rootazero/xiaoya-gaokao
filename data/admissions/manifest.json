@@ -53,6 +53,20 @@
       "records": 4194,
       "source": "掌上高考(gaokao.cn)",
       "sourceRepo": "1837620622/gaokao-admission-crawler"
+    },
+    {
+      "province": "浙江",
+      "file": "zhejiang.csv",
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "专业投档线(普通类一段平行投档)",
+      "records": 51934,
+      "source": "浙江省教育考试院",
+      "sourceRepo": "zcbyby/2026-ZJ_ScoreDB",
+      "license": "MIT"
     }
   ]
 }
