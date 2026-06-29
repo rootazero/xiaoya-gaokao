@@ -72,12 +72,19 @@
       "province": "河北",
       "file": "hebei.csv",
       "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
         2025
       ],
-      "granularity": "专业录取最低分(掌上高考·非投档线)",
-      "records": 4104,
-      "source": "掌上高考(gaokao.cn)",
-      "sourceRepo": "1837620622/gaokao-admission-crawler"
+      "granularity": "院校最低专业组投档线(物理/历史; 2019-20老高考文理)",
+      "records": 11791,
+      "source": "河北省教育考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "P3口径升级: 原掌上高考2025录取分→GaokaoCompass真投档线6年。major_group源缺→按校×科类取排除中外合作/境外校区(芬兰/波兰)/学术互认ISEC/专项/定向/公费师范后的最低专业min_score近似院校投档线; 清华/北大2025物理688逐分校验吻合, 本省旗舰(燕山565)近官方主组; 2024源缺。最低位次GaokaoCompass自带"
     },
     {
       "province": "江苏",
