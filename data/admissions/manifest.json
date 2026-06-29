@@ -110,6 +110,116 @@
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
       "note": "2023损坏/2024无科类已跳过; min_rank不可信留空; floor=380去脏数据"
+    },
+    {
+      "province": "山东",
+      "file": "shandong.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2025
+      ],
+      "granularity": "院校投档线(2020+综合新高考/2017-19文理老高考)",
+      "records": 23321,
+      "source": "山东省教育招生考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "3+3科类=综合(吃通配); 2024源无分已跳过; 2025顶尖校源未收全; min_rank不可信留空"
+    },
+    {
+      "province": "广东",
+      "file": "guangdong.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2021+物理历史/2017-20文理老高考)",
+      "records": 10741,
+      "source": "广东省教育考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "2023(历史only截断)/2024(516行截断)已跳过; 2025部分缺顶尖校; 位次留空"
+    },
+    {
+      "province": "湖北",
+      "file": "hubei.csv",
+      "years": [
+        2018,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2021+物理历史/2018-20文理老高考)",
+      "records": 16360,
+      "source": "湖北省教育考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "2017/2021源空已跳过; 2025部分缺顶尖校; 位次留空"
+    },
+    {
+      "province": "福建",
+      "file": "fujian.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2021+物理历史/2017-20文理老高考)",
+      "records": 17825,
+      "source": "福建省教育考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "2024源无分已跳过; 2025部分缺顶尖校; 位次留空"
+    },
+    {
+      "province": "湖南",
+      "file": "hunan.csv",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线",
+      "records": 9643,
+      "source": "湖南省教育考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "3+1+2; 艺术/体育(综合分)已剔; 2025部分缺顶尖校; 位次留空"
+    },
+    {
+      "province": "重庆",
+      "file": "chongqing.csv",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线",
+      "records": 11885,
+      "source": "重庆市教育考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "3+1+2; 艺术/体育(综合分)已剔; 位次留空"
     }
   ]
 }
