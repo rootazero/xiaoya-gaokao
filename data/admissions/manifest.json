@@ -78,6 +78,22 @@
       "records": 4104,
       "source": "掌上高考(gaokao.cn)",
       "sourceRepo": "1837620622/gaokao-admission-crawler"
+    },
+    {
+      "province": "江苏",
+      "file": "jiangsu.csv",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线",
+      "records": 11776,
+      "source": "江苏省教育考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "min_rank不可信故最低位次留空"
     }
   ]
 }
