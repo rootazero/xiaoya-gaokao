@@ -925,8 +925,10 @@
   }
 
   function admissionHistoryForSchool(school) {
-    const key = admissionScopeKey(state.homeProvince, state.subject, school.name);
-    return admissionIndex.get(key) || [];
+    const exact = admissionIndex.get(admissionScopeKey(state.homeProvince, state.subject, school.name)) || [];
+    if (normalizeSubjectGroup(state.subject) === "综合") return exact;
+    const general = admissionIndex.get(admissionScopeKey(state.homeProvince, "综合", school.name)) || [];
+    return general.length ? exact.concat(general) : exact;
   }
 
   function majorScoreHistoryForSchool(school) {
@@ -1022,7 +1024,9 @@
   }
 
   function isCurrentAdmissionScope(record) {
-    return compactProvince(record.province) === compactProvince(state.homeProvince) && normalizeSubjectGroup(record.subject) === normalizeSubjectGroup(state.subject);
+    if (compactProvince(record.province) !== compactProvince(state.homeProvince)) return false;
+    const have = normalizeSubjectGroup(record.subject);
+    return have === normalizeSubjectGroup(state.subject) || have === "综合";
   }
 
   function compactProvince(value) {
