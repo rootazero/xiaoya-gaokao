@@ -409,14 +409,15 @@
         2020,
         2021,
         2022,
-        2023
+        2023,
+        2025
       ],
       "granularity": "院校专业组投档线(2025+物理历史/老高考文理)",
-      "records": 11609,
+      "records": 16060,
       "source": "山西省招生考试管理中心",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "源含多批次无专业组标签,已按校×科类聚合取最低投档线; 老高考年理→物理文→历史; 缺2024,2025(源无/损坏已跳过); min_rank留空"
+      "note": "源含多批次无专业组标签,已按校×科类聚合取最低投档线; 老高考年理→物理文→历史; 缺2024,2025(源无/损坏已跳过); min_rank留空; 2025=掌上高考录取分(非投档线·新高考首考年)补"
     },
     {
       "province": "内蒙古",
@@ -488,14 +489,15 @@
         2019,
         2020,
         2021,
-        2022
+        2022,
+        2025
       ],
       "granularity": "院校专业组投档线(2025+物理历史/老高考文理)",
-      "records": 5701,
+      "records": 6958,
       "source": "青海省教育考试院",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "老高考年理→物理文→历史; 缺2023,2024,2025(源无/损坏已跳过); min_rank留空"
+      "note": "老高考年理→物理文→历史; 缺2023,2024,2025(源无/损坏已跳过); min_rank留空; 2025=掌上高考录取分(非投档线)补"
     },
     {
       "province": "宁夏",
