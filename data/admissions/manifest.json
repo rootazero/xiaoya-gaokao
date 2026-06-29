@@ -105,11 +105,11 @@
         2025
       ],
       "granularity": "院校投档线(2025专业组级新高考/2020-2022院校级老高考)",
-      "records": 6253,
+      "records": 9575,
       "source": "河南省招生办公室",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "2023损坏/2024无科类已跳过; min_rank不可信留空; floor=380去脏数据"
+      "note": "2023损坏/2024无科类已跳过; min_rank不可信留空; floor=380去脏数据; 2025部分校(含顶尖校)=掌上高考录取分补"
     },
     {
       "province": "山东",
@@ -144,11 +144,11 @@
         2025
       ],
       "granularity": "院校专业组投档线(2021+物理历史/2017-20文理老高考)",
-      "records": 10741,
+      "records": 13280,
       "source": "广东省教育考试院",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "2023(历史only截断)/2024(516行截断)已跳过; 2025部分缺顶尖校; 位次留空"
+      "note": "2023(历史only截断)/2024(516行截断)已跳过; 2025部分缺顶尖校; 位次留空; 2025部分校(含顶尖校)=掌上高考录取分补"
     },
     {
       "province": "湖北",
@@ -163,11 +163,11 @@
         2025
       ],
       "granularity": "院校专业组投档线(2021+物理历史/2018-20文理老高考)",
-      "records": 16360,
+      "records": 17762,
       "source": "湖北省教育考试院",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "2017/2021源空已跳过; 2025部分缺顶尖校; 位次留空"
+      "note": "2017/2021源空已跳过; 2025部分缺顶尖校; 位次留空; 2025部分校(含顶尖校)=掌上高考录取分补"
     },
     {
       "province": "福建",
@@ -183,11 +183,11 @@
         2025
       ],
       "granularity": "院校专业组投档线(2021+物理历史/2017-20文理老高考)",
-      "records": 17825,
+      "records": 20193,
       "source": "福建省教育考试院",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "2024源无分已跳过; 2025部分缺顶尖校; 位次留空"
+      "note": "2024源无分已跳过; 2025部分缺顶尖校; 位次留空; 2025部分校(含顶尖校)=掌上高考录取分补"
     },
     {
       "province": "湖南",
@@ -199,11 +199,11 @@
         2025
       ],
       "granularity": "院校专业组投档线",
-      "records": 9643,
+      "records": 10627,
       "source": "湖南省教育考试院",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "3+1+2; 艺术/体育(综合分)已剔; 2025部分缺顶尖校; 位次留空"
+      "note": "3+1+2; 艺术/体育(综合分)已剔; 2025部分缺顶尖校; 位次留空; 2025部分校(含顶尖校)=掌上高考录取分补"
     },
     {
       "province": "重庆",
@@ -235,11 +235,11 @@
         2025
       ],
       "granularity": "院校投档线(综合新高考/老高考文理)",
-      "records": 6779,
+      "records": 8301,
       "source": "天津市教育招生考试院",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "老高考年理→物理文→历史; 缺2022(源无/损坏已跳过); min_rank留空"
+      "note": "老高考年理→物理文→历史; 缺2022(源无/损坏已跳过); min_rank留空; 2025部分校(含顶尖校)=掌上高考录取分补"
     },
     {
       "province": "海南",
@@ -256,11 +256,11 @@
         2025
       ],
       "granularity": "院校投档线(综合新高考/老高考文理)",
-      "records": 7925,
+      "records": 9148,
       "source": "海南省考试局",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "海南实行标准分(满分900); 老高考年理→物理文→历史; min_rank留空"
+      "note": "海南实行标准分(满分900); 老高考年理→物理文→历史; min_rank留空; 2025部分校(含顶尖校)=掌上高考录取分补"
     },
     {
       "province": "辽宁",
@@ -296,11 +296,11 @@
         2025
       ],
       "granularity": "院校专业组投档线(2024+物理历史/老高考文理)",
-      "records": 12023,
+      "records": 14904,
       "source": "江西省教育考试院",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "老高考年理→物理文→历史; 缺2023,2024(源无/损坏已跳过); min_rank留空"
+      "note": "老高考年理→物理文→历史; 缺2023,2024(源无/损坏已跳过); min_rank留空; 2025部分校(含顶尖校)=掌上高考录取分补"
     },
     {
       "province": "贵州",
@@ -333,11 +333,11 @@
         2025
       ],
       "granularity": "院校专业组投档线(2024+物理历史/老高考文理)",
-      "records": 16088,
+      "records": 18373,
       "source": "广西招生考试院",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "老高考年理→物理文→历史; min_rank留空"
+      "note": "老高考年理→物理文→历史; min_rank留空; 2025部分校(含顶尖校)=掌上高考录取分补"
     },
     {
       "province": "甘肃",
@@ -354,11 +354,11 @@
         2025
       ],
       "granularity": "院校专业组投档线(2024+物理历史/老高考文理)",
-      "records": 13624,
+      "records": 16322,
       "source": "甘肃省教育考试院",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "老高考年理→物理文→历史; min_rank留空"
+      "note": "老高考年理→物理文→历史; min_rank留空; 2025部分校(含顶尖校)=掌上高考录取分补"
     },
     {
       "province": "吉林",
@@ -393,11 +393,11 @@
         2025
       ],
       "granularity": "院校专业组投档线(2024+物理历史/老高考文理)",
-      "records": 8802,
+      "records": 11131,
       "source": "黑龙江省招生考试院",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "老高考年理→物理文→历史; 缺2022,2023,2024(源无/损坏已跳过); min_rank留空"
+      "note": "老高考年理→物理文→历史; 缺2022,2023,2024(源无/损坏已跳过); min_rank留空; 2025部分校(含顶尖校)=掌上高考录取分补"
     },
     {
       "province": "山西",
@@ -455,11 +455,11 @@
         2025
       ],
       "granularity": "院校专业组投档线(2025+物理历史/老高考文理)",
-      "records": 17689,
+      "records": 20920,
       "source": "四川省教育考试院",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "老高考年理→物理文→历史; min_rank留空"
+      "note": "老高考年理→物理文→历史; min_rank留空; 2025部分校(含顶尖校)=掌上高考录取分补"
     },
     {
       "province": "云南",
@@ -474,11 +474,11 @@
         2025
       ],
       "granularity": "院校专业组投档线(2025+物理历史/老高考文理)",
-      "records": 11406,
+      "records": 13532,
       "source": "云南省招生考试院",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "老高考年理→物理文→历史; 缺2022,2024(源无/损坏已跳过); min_rank留空"
+      "note": "老高考年理→物理文→历史; 缺2022,2024(源无/损坏已跳过); min_rank留空; 2025部分校(含顶尖校)=掌上高考录取分补"
     },
     {
       "province": "青海",
@@ -509,11 +509,11 @@
         2025
       ],
       "granularity": "院校专业组投档线(2025+物理历史/老高考文理)",
-      "records": 4039,
+      "records": 5929,
       "source": "宁夏教育考试院",
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
-      "note": "老高考年理→物理文→历史; 缺2017,2018,2019,2020,2021(源无/损坏已跳过); min_rank留空"
+      "note": "老高考年理→物理文→历史; 缺2017,2018,2019,2020,2021(源无/损坏已跳过); min_rank留空; 2025部分校(含顶尖校)=掌上高考录取分补"
     },
     {
       "province": "新疆",
