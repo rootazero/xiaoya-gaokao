@@ -42,6 +42,17 @@
       "records": 10044,
       "source": "安徽省教育招生考试院",
       "sourceRepo": "ZaneLing/GaoKao"
+    },
+    {
+      "province": "陕西",
+      "file": "shaanxi.csv",
+      "years": [
+        2025
+      ],
+      "granularity": "专业录取最低分(掌上高考·非投档线)",
+      "records": 4194,
+      "source": "掌上高考(gaokao.cn)",
+      "sourceRepo": "1837620622/gaokao-admission-crawler"
     }
   ]
 }
