@@ -5,7 +5,9 @@
   const number = new Intl.NumberFormat("zh-CN");
   const basketKey = "xiaoya-gaokao-basket";
   const admissionKey = "xiaoya-admission-history-v1";
-  let admissionRecords = loadAdmissionRecords();
+  let userAdmissions = loadAdmissionRecords();
+  let defaultAdmissions = [];
+  let admissionRecords = userAdmissions;
   let admissionIndex = buildAdmissionIndex(admissionRecords);
   const majorScoreBasePath = "data/major-scores/";
   const subjectLabels = ["物理", "历史", "综合"];
@@ -282,6 +284,7 @@
     bindEvents();
     renderAll();
     refreshMajorScoreData();
+    loadDefaultAdmissions();
   }
 
   function fillSelects() {
@@ -575,9 +578,9 @@
         showToast("没有识别到有效招录记录");
         return;
       }
-      admissionRecords = mergeAdmissionRecords(admissionRecords, imported);
-      admissionIndex = buildAdmissionIndex(admissionRecords);
+      userAdmissions = mergeAdmissionRecords(userAdmissions, imported);
       saveAdmissionRecords();
+      rebuildAdmissions();
       renderAll();
       showToast(`已导入 ${number.format(imported.length)} 条招录记录`);
     } catch (error) {
@@ -588,9 +591,9 @@
   }
 
   function clearAdmissionData() {
-    admissionRecords = [];
-    admissionIndex = buildAdmissionIndex(admissionRecords);
+    userAdmissions = [];
     localStorage.removeItem(admissionKey);
+    rebuildAdmissions();
     renderAll();
     showToast("已清空招录数据");
   }
@@ -1803,6 +1806,36 @@
     localStorage.setItem(basketKey, JSON.stringify(state.basket));
   }
 
+  function rebuildAdmissions() {
+    admissionRecords = mergeAdmissionRecords(defaultAdmissions, userAdmissions);
+    admissionIndex = buildAdmissionIndex(admissionRecords);
+  }
+
+  async function loadDefaultAdmissions() {
+    try {
+      const response = await fetch("data/admissions/manifest.json", { cache: "no-cache" });
+      if (!response.ok) return;
+      const manifest = await response.json();
+      const datasets = Array.isArray(manifest.datasets) ? manifest.datasets : [];
+      const collected = [];
+      for (const dataset of datasets) {
+        try {
+          const file = await fetch(`data/admissions/${dataset.file}`, { cache: "no-cache" });
+          if (!file.ok) continue;
+          collected.push(...parseAdmissionCsv(await file.text()));
+        } catch {
+          /* skip a single unavailable dataset */
+        }
+      }
+      if (!collected.length) return;
+      defaultAdmissions = collected;
+      rebuildAdmissions();
+      renderAll();
+    } catch {
+      /* default admissions are optional; ignore load failures */
+    }
+  }
+
   function loadAdmissionRecords() {
     try {
       const saved = JSON.parse(localStorage.getItem(admissionKey) || "[]");
@@ -1814,7 +1847,7 @@
 
   function saveAdmissionRecords() {
     try {
-      localStorage.setItem(admissionKey, JSON.stringify(admissionRecords));
+      localStorage.setItem(admissionKey, JSON.stringify(userAdmissions));
     } catch {
       showToast("数据量较大，浏览器本地存储已满");
     }

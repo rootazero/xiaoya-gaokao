@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "datasets": [
+    {
+      "province": "上海",
+      "file": "shanghai.csv",
+      "years": [2020, 2021, 2022, 2023, 2024, 2025],
+      "granularity": "院校专业组投档线",
+      "records": 8133,
+      "source": "上海市教育考试院",
+      "sourceRepo": "666keke/Shanghai-Gaokao"
+    }
+  ]
+}
