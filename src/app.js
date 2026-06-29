@@ -30,8 +30,8 @@
   const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
 
   const state = {
-    score: 586,
-    homeProvince: "河南省",
+    score: 616,
+    homeProvince: "安徽省",
     subject: "物理",
     targetProvince: "全部",
     activeProvince: "全部",
@@ -1768,7 +1768,7 @@
   }
 
   function resetFilters() {
-    state.score = 586;
+    state.score = 616;
     state.subject = "物理";
     state.targetProvince = "全部";
     state.activeProvince = "全部";
@@ -1779,8 +1779,8 @@
     state.search = "";
     state.sort = "fit";
     setMapCollapsed(false);
-    selectors.scoreInput.value = "586";
-    selectors.scoreRange.value = "586";
+    selectors.scoreInput.value = "616";
+    selectors.scoreRange.value = "616";
     selectors.subjectSelect.value = "物理";
     selectors.targetProvince.value = "全部";
     selectors.levelFilter.value = "全部";
