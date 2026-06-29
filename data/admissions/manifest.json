@@ -220,6 +220,330 @@
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
       "note": "3+1+2; 艺术/体育(综合分)已剔; 位次留空"
+    },
+    {
+      "province": "天津",
+      "file": "tianjin.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校投档线(综合新高考/老高考文理)",
+      "records": 6779,
+      "source": "天津市教育招生考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "老高考年理→物理文→历史; 缺2022(源无/损坏已跳过); min_rank留空"
+    },
+    {
+      "province": "海南",
+      "file": "hainan.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校投档线(综合新高考/老高考文理)",
+      "records": 7925,
+      "source": "海南省考试局",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "海南实行标准分(满分900); 老高考年理→物理文→历史; min_rank留空"
+    },
+    {
+      "province": "辽宁",
+      "file": "liaoning.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2021+物理历史/老高考文理)",
+      "records": 14369,
+      "source": "辽宁省招生考试之窗",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "老高考年理→物理文→历史; min_rank留空"
+    },
+    {
+      "province": "江西",
+      "file": "jiangxi.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2024+物理历史/老高考文理)",
+      "records": 12023,
+      "source": "江西省教育考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "老高考年理→物理文→历史; 缺2023,2024(源无/损坏已跳过); min_rank留空"
+    },
+    {
+      "province": "贵州",
+      "file": "guizhou.csv",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2024+物理历史/老高考文理)",
+      "records": 7889,
+      "source": "贵州省招生考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "老高考年理→物理文→历史; 缺2017,2018,2019,2020,2021(源无/损坏已跳过); min_rank留空"
+    },
+    {
+      "province": "广西",
+      "file": "guangxi.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2024+物理历史/老高考文理)",
+      "records": 16088,
+      "source": "广西招生考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "老高考年理→物理文→历史; min_rank留空"
+    },
+    {
+      "province": "甘肃",
+      "file": "gansu.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2024+物理历史/老高考文理)",
+      "records": 13624,
+      "source": "甘肃省教育考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "老高考年理→物理文→历史; min_rank留空"
+    },
+    {
+      "province": "吉林",
+      "file": "jilin.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2024+物理历史/老高考文理)",
+      "records": 13657,
+      "source": "吉林省教育考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "老高考年理→物理文→历史; min_rank留空"
+    },
+    {
+      "province": "黑龙江",
+      "file": "heilongjiang.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2024+物理历史/老高考文理)",
+      "records": 8802,
+      "source": "黑龙江省招生考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "老高考年理→物理文→历史; 缺2022,2023,2024(源无/损坏已跳过); min_rank留空"
+    },
+    {
+      "province": "山西",
+      "file": "shanxi.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "granularity": "院校专业组投档线(2025+物理历史/老高考文理)",
+      "records": 11609,
+      "source": "山西省招生考试管理中心",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "源含多批次无专业组标签,已按校×科类聚合取最低投档线; 老高考年理→物理文→历史; 缺2024,2025(源无/损坏已跳过); min_rank留空"
+    },
+    {
+      "province": "内蒙古",
+      "file": "neimenggu.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2025+物理历史/老高考文理)",
+      "records": 14461,
+      "source": "内蒙古招生考试信息网",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "老高考年理→物理文→历史; min_rank留空"
+    },
+    {
+      "province": "四川",
+      "file": "sichuan.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2025+物理历史/老高考文理)",
+      "records": 17689,
+      "source": "四川省教育考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "老高考年理→物理文→历史; min_rank留空"
+    },
+    {
+      "province": "云南",
+      "file": "yunnan.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2023,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2025+物理历史/老高考文理)",
+      "records": 11406,
+      "source": "云南省招生考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "老高考年理→物理文→历史; 缺2022,2024(源无/损坏已跳过); min_rank留空"
+    },
+    {
+      "province": "青海",
+      "file": "qinghai.csv",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "granularity": "院校专业组投档线(2025+物理历史/老高考文理)",
+      "records": 5701,
+      "source": "青海省教育考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "老高考年理→物理文→历史; 缺2023,2024,2025(源无/损坏已跳过); min_rank留空"
+    },
+    {
+      "province": "宁夏",
+      "file": "ningxia.csv",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2025+物理历史/老高考文理)",
+      "records": 4039,
+      "source": "宁夏教育考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "老高考年理→物理文→历史; 缺2017,2018,2019,2020,2021(源无/损坏已跳过); min_rank留空"
+    },
+    {
+      "province": "新疆",
+      "file": "xinjiang.csv",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2025+物理历史/老高考文理)",
+      "records": 5047,
+      "source": "新疆招生网",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "老高考年理→物理文→历史; 缺2017,2018,2019,2020,2021(源无/损坏已跳过); min_rank留空"
+    },
+    {
+      "province": "西藏",
+      "file": "xizang.csv",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线(2025+物理历史/老高考文理)",
+      "records": 579,
+      "source": "西藏教育考试院",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "源稀疏(579行,缺清北/西藏大学,多为内地招藏院校); 老高考年理→物理文→历史; 缺2017,2018,2019,2020,2021(源无/损坏已跳过); min_rank留空"
     }
   ]
 }
