@@ -94,6 +94,22 @@
       "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
       "license": "MIT",
       "note": "min_rank不可信故最低位次留空"
+    },
+    {
+      "province": "河南",
+      "file": "henan.csv",
+      "years": [
+        2020,
+        2021,
+        2022,
+        2025
+      ],
+      "granularity": "院校投档线(2025专业组级新高考/2020-2022院校级老高考)",
+      "records": 6253,
+      "source": "河南省招生办公室",
+      "sourceRepo": "choucisan/GaokaoCompass (HF choucsan/Gaokao-Compass-11M)",
+      "license": "MIT",
+      "note": "2023损坏/2024无科类已跳过; min_rank不可信留空; floor=380去脏数据"
     }
   ]
 }
