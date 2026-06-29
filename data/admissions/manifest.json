@@ -30,6 +30,18 @@
       "source": "北京教育考试院",
       "sourceRepo": "scottli139/beijing-gaokao-scores",
       "license": "CC-BY-4.0"
+    },
+    {
+      "province": "安徽",
+      "file": "anhui.csv",
+      "years": [
+        2024,
+        2025
+      ],
+      "granularity": "院校专业组投档线(专业最低分聚合)",
+      "records": 10044,
+      "source": "安徽省教育招生考试院",
+      "sourceRepo": "ZaneLing/GaoKao"
     }
   ]
 }
